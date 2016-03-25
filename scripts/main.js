@@ -65,6 +65,11 @@ main.initialize = function() {
         slider.navigateTo('#page-contact', slider.Direction.RIGHT);
     });
 
+    //Reset to main app screen
+    $('.link-reset').click(function(){
+        main.start();
+    });
+
     //Setup StillThere
     stillthere.timeoutStillThere = 200000;
     stillthere.timeout = 300000;
