@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/gumby.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <script src="scripts/libs/jquery-2.1.1.min.js"></script>
+    <script src="scripts/libs/slider.js"></script>
+    <script src="scripts/libs/stillthere.js"></script>
+    <script src="scripts/libs/jquery.cbpFWSlider.min.js"></script>
+    <script src="scripts/main.js"></script>
+  <body>  
+    <header>
+        <div class="logo">
+            <img src="images/bellevue-college-logo.png" alt="" /><span class="logo-name">Center for Career Connections</span>
+        </div>
+    </header>
+
+    <div id="slide-container" class="slider"></div>
+    <div id="pages" class="hidden">
+        <div class="page" id="page-processing"></div>
+        
+        <!--Page Landing-->
+        <div class="page" id="page-landing">            
+          <div class="hero-container">
+            <div id="bg-screen" class="welcome">
+              <div class="row">
+                <div class="six columns lp-content-bg voffset6 hloffset7">
+                  <h1 class="heading heading-large text-center">Welcome to the Career Corner!</h1>
+                  <ul class="decorated-list voffset2" style="margin-left: 45px;">
+                    <li>Schedule an appointment with a career specialist</li>
+                    <li>Find workshops and events</li>  
+                    <li>Explore career resources</li>
+                  </ul>
+                  <div id="lp-cta-btn" class="xxlarge secondary btn overview voffset2 text-center box-shadow animated pulse infinite" style="margin-left: 250px;"><a href="#">Get Started <i class="icon-right-open"></i></a></div>
+                </div>
+                 <div class="four columns">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div><!--.page-landing-->
+
+        <!--Page Overview-->
+        <div class="page" id="page-overview">            
+          <div class="row">
+            <div class="four columns voffset8">
+              <div id="btn-special" class="xxlarge secondary btn schedule voffset3 hloffset3 animated pulse infinite" style="display: block;"><a href="#"><i class="icon-chat"></i>Schedule an appointment</a></div>
+            </div>
+
+            <div class="four columns voffset8">
+              <div id="btn-special" class="xxlarge primary btn events voffset3 hloffset3" style="display: block;"><a href="#"><i class="icon-clock"></i>Workshops and Events</a></div>
+            </div>
+ 
+            <div class="four columns voffset8">
+              <div id="btn-special" class="xxlarge primary btn career-guides voffset3 hloffset3" style="display: block;"><a href="#"><i class="icon-docs"></i>Explore<br /> Resources</a></div>
+            </div>
+          </div>
+              
+          <div class="row voffset7 bottom-half-content">
+            <div class="bottom-half-content-inner-content">
+              <p class="lead" style="font-size: 28px">The Center For Career Connections at Bellevue College provides comprehensive career resources for your <br /> academic and professional goals.</p>
+              <p class="lead voffset3" style="font-size: 28px"><strong>We can help with:</strong></p>
+              <ul class="decorated-list voffset2" style="font-size: 27px; margin-left: 45px;">
+                <li>Scheduling one-on-one appointments</li>
+                <li>Finding events and career workshops</li>
+                <li>Exploring career resources</li>
+              </ul>
+            </div>
+          </div><!--row-->
+        </div><!--.page-initial-->
+
+        <!--Page Schedule-->
+        <div class="page" id="page-schedule">
+          <div class="row">
+            <div class="twelve columns">
+              <div class="xlarge warning btn schedule return-main-menu voffset6" style="float: left"><a href="#"><i class="icon-left-open"></i>Back to Overview</a></div>
+              <div class="large success btn schedule voffset6 link-contact" style="float: right"><a href="#"><i class="icon-mail"></i>Contact Us</a></div>
+              <h1 class="heading heading-xlarge voffset3 text-center">Schedule an Appointment</h1>
+
+              <div class="voffset2 bottom-half-content">
+              	<iframe src="https://bccareerkiosk.youcanbook.me/?noframe=true&skipHeaderFooter=true" width="1870" height="865" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>
+<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
+              </div>
+            </div>
+          </div>
+        </div><!--.page-schedule-->
+
+        <!--Page Events-->
+        <div class="page" id="page-events">
+          <div class="row">
+            <div class="twelve columns">
+              <div class="xlarge warning btn schedule return-main-menu voffset6" style="float: left"><a href="#"><i class="icon-left-open"></i>Back to Overview</a></div>
+              <div class="large success btn schedule voffset6 link-contact" style="float: right"><a href="#"><i class="icon-mail"></i>Contact Us</a></div>
+              <h1 class="heading heading-xlarge voffset3 text-center">Workshops and Events</h1>
+			  
+              <div class="voffset3">
+              	<p class="lead" style="text-align: center; background: #C9EA79; padding: 10px;">To register for an event please call <strong>(425) 564-2279</strong> or email <strong>careers@bellevuecollege.edu</strong>. If you sign up for event, we  will send you a campus map and parking pass.</p>
+              </div>
+              <div data-tockify-component="calendar" data-tockify-calendar="valeriu.ciobanu"></div><script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+            </div>
+          </div>
+        </div><!--.page-events-->
+
+        <!--Page Guides-->
+        <div class="page" id="page-career-guides">
+          <div class="row">
+            <div class="twelve columns">
+              <div class="xlarge warning btn schedule return-main-menu voffset6" style="float: left"><a href="#"><i class="icon-left-open"></i>Back to Overview</a></div>
+              <div class="large success btn schedule voffset6 link-contact" style="float: right"><a href="#"><i class="icon-mail"></i>Contact Us</a></div>
+              <h1 class="heading heading-xlarge voffset3 text-center">Explore Our Online Career Resources</h1>
+
+              <div class="voffset3 bottom-half-content">
+                <p class="lead"></p>
+                
+                <div class="row">
+                
+                  <div class="six columns">
+                  	<div id="tile-connect" class="tile">
+                    	<img style="border: 1px solid #eee;" src="images/connect-tile.jpg" alt="Connect! Career Management System" />
+                        http://depts.bellevuecollege.edu/careers/connect-career-management-system/
+                  	</div>
+                  </div>
+
+                  <div class="six columns">
+                  	<div class="tile">
+                        <img style="border: 1px solid #eee;" src="images/careerpath-tile.jpg" alt="Career Pathways" />
+                        http://www.bellevuecollege.edu/careerpath/
+                  	</div>
+                  </div>
+                </div>  
+                
+                <!--Second Row-->
+                 <div class="row voffset4">
+                  <div class="four columns">
+                  	<div class="tile">
+                    	<img style="border: 1px solid #eee;" src="images/veterans-tile.jpg" alt="Veteran's Program" />
+                        http://www.bellevuecollege.edu/veterans/
+                     </div>
+                  </div>
+
+                  <div class="four columns">
+                  	<div class="tile">
+                    	<img style="border: 1px solid #eee;" src="images/guide-tile.jpg" alt="Career Guides" />
+                        http://bit.ly/1m233XO
+                  	</div>
+                  </div>
+                  
+                  <div class="four columns">
+                  	<div class="tile">
+                    	<img style="border: 1px solid #eee;" src="images/employers-services-tile.jpg" alt="Employer Services at Bellevue College" />
+                       	http://bit.ly/1PFNAJF
+                  	</div>
+                  </div>
+
+                </div>
+
+              </div>  
+            </div>
+          </div>
+        </div><!--.page-career-guides-->
+
+        <!--Page Contact-->
+        <div class="page" id="page-contact">
+          <div class="row">
+            <div class="twelve columns">
+              <div class="xlarge warning btn schedule return-main-menu voffset6" style="float: left"><a href="#"><i class="icon-left-open"></i>Back to Overview</a></div>
+              <div class="large success btn schedule voffset6 link-contact" style="float: right"><a href="#"><i class="icon-mail"></i>Contact Us</a></div>
+              <h1 class="heading heading-xlarge voffset3 text-center">Contact Us</h1>
+
+              <div class="voffset4 bottom-half-content">
+              <div class="row"> 
+               <div class="six columns voffset3">
+<iframe class="boxed" height="499" allowTransparency="true" frameborder="0" scrolling="no" style="width:95%; margin-left: 50px;"  src="https://centerforcareerconnections.wufoo.com/embed/r16so79t1mkuokh/"><a href="https://centerforcareerconnections.wufoo.com/forms/r16so79t1mkuokh/">Fill out my Wufoo form!</a></iframe>
+              </div>
+              <div class="six columns voffset4">
+              	<p class="lead">If you have questions or wish to make an appointment, please call <strong>(425) 564-2279</strong>.</p>
+                <p class="lead">The Center for Career Connections is are located on the 2nd floor of the "B" Building (Student Services) on the Main Campus of Bellevue College. Our address is:</p>
+                
+                <p class="lead"><strong>Center for Career Connections</strong><br />
+                Bellevue College, B231<br />
+                3000 Landerholm Circle SE<br />
+                Bellevue, WA 98007-6484<br /></p>
+               <p class="lead"><strong>Regular Business Hours</strong><br />
+                Monday - Thursday 8:30-4:30pm<br />
+                Friday - 8:30-4pm</p>
+                 
+                <p class="lead">The Center for Career Connections is open to all career explorers and job seekers. You do not have to be registered for classes to use our services.</p>
+              </div>
+
+              </div>  
+            </div>
+          </div>
+        </div><!--.page-contact-->
+      </div><!--.pages-->
+  </body>
+</html>
