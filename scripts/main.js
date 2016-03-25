@@ -79,23 +79,25 @@ main.initialize = function() {
 };
 
 
-//Background Changes
-    $(function () {
-        var background = $('#bg-screen');
-        var backgrounds = [
-          'url(images/hero-images/001.jpg) no-repeat center top',
-          'url(images/hero-images/002.jpg) no-repeat center top',
-          'url(images/hero-images/003.jpg) no-repeat center top'];
-        var current = 0;
 
-        function nextBackground() {
-            background.css(
-                'background',
-            backgrounds[current = ++current % backgrounds.length]);
+/**
+ * Background change on Landing Page
+ */
+$(function () {
+    var background = $('#bg-screen');
+    var backgrounds = [
+        'url(images/hero-images/001.jpg) no-repeat center top',
+        'url(images/hero-images/002.jpg) no-repeat center top',
+        'url(images/hero-images/003.jpg) no-repeat center top'];
+    var current = 0;
 
-            setTimeout(nextBackground, 12000);
-        }
+    function nextBackground() {
+        background.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
+
         setTimeout(nextBackground, 12000);
-        background.css('background', backgrounds[0]);
-
-    });
+    }
+    setTimeout(nextBackground, 12000);
+    background.css('background', backgrounds[0]);
+});
