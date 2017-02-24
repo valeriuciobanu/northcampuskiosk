@@ -71,16 +71,48 @@ main.initialize = function() {
     });
 
     //Setup StillThere
-    stillthere.timeoutStillThere = 200000;
-    stillthere.timeout = 300000;
+    stillthere.timeoutStillThere = 20000;
+    stillthere.timeout = 30000;
     stillthere.addEventListener(stillthere.Event.STILL_THERE, function() {
         stillthere.overlay.find('.message').html('Are you still there?');
     });
     stillthere.addEventListener(stillthere.Event.TIMEOUT, function() {
         stillthere.overlay.find('.message').hide();
         main.start();
+        $('html').css('font-size', defaultFontSize);
     });
-    
+
+    //Font size resizing
+    var defaultFontSize = $('html').css('font-size');
+
+    $(".resetFont").click(function () {
+        $('html').css('font-size', defaultFontSize);
+        return false;
+    });
+
+    $(".increaseFont").click(function () {
+        var fontSize = getFontSize();
+        var newFontSize = fontSize + 1;
+        setFontSize(newFontSize);
+        console.log ("Increased font by one");
+    });
+
+    function getFontSize() {
+        var currentSize = $("html").css("font-size");
+        var currentSizeNumber = parseFloat(currentSize, 12);
+        if (currentSizeNumber > 24) {
+            currentSizeNumber = 24;
+        }
+        if (currentSizeNumber < 10) {
+            currentSizeNumber = 10;
+        }
+        return currentSizeNumber;
+    }
+
+    function setFontSize(size) {
+        $("html").css("font-size", size);
+        $(".actualSize").html(size);
+    }    
 };
 
 
@@ -106,3 +138,4 @@ $(function () {
     setTimeout(nextBackground, 12000);
     background.css('background', backgrounds[0]);
 });
+

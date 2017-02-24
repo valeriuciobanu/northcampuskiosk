@@ -43,7 +43,7 @@ html { font-size: 100%; line-height: 1.625em; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #fff; font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { background: #fff; font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif; font-size:; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
