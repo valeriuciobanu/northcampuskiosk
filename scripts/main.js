@@ -71,8 +71,8 @@ main.initialize = function() {
     });
 
     //Setup StillThere
-    stillthere.timeoutStillThere = 20000;
-    stillthere.timeout = 30000;
+    stillthere.timeoutStillThere = 200000;
+    stillthere.timeout = 300000;
     stillthere.addEventListener(stillthere.Event.STILL_THERE, function() {
         stillthere.overlay.find('.message').html('Are you still there?');
     });
